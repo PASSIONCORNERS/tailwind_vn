@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.17/tailwind.min.css"
+      referrerpolicy="no-referrer"
+    /> -->
+    <title>Tailwind CSS</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container mx-auto px-4">
+        <nav class="flex justify-between items-center py-5">
+          <!-- logo -->
+          <div class="z-10 w-32 md:w-full">
+            <img src="./img/left.png" alt="" />
+          </div>
+          <!-- links -->
+          <ul
+            id="menu"
+            class="
+              invisible
+              fixed
+              top-0
+              left-0
+              w-full
+              h-screen
+              flex flex-col
+              justify-center
+              items-center
+              bg-gray-900 bg-opacity-90
+              md:visible
+              md:bg-transparent
+              md:h-auto
+              md:justify-between
+              md:flex-row
+              md:static
+              md:flex
+              c-transition
+              z-20
+            "
+          >
+            <li class="m-12 md:m-0">
+              <a
+                href="#"
+                class="text-white md:text-black hover:text-red-500 c-transition"
+                >Home</a
+              >
+            </li>
+            <li class="m-12 md:m-0">
+              <a
+                href="#"
+                class="text-white md:text-black hover:text-red-500 c-transition"
+                >Product</a
+              >
+            </li>
+            <li class="m-12 md:m-0">
+              <a
+                href="#"
+                class="text-white md:text-black hover:text-red-500 c-transition"
+                >FAQ</a
+              >
+            </li>
+            <li class="m-12 md:m-0">
+              <a
+                href="#"
+                class="text-white md:text-black hover:text-red-500 c-transition"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <!-- menu btn -->
+          <div class="md:hidden z-20 cursor-pointer" id="menu-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- banner -->
+    <section id="banner">
+      <div
+        class="w-full h-custom bg-no-repeat bg-cover relative"
+        style="background-image: url('./img/banner.png')"
+      >
+        <!-- heading -->
+        <div
+          class="
+            z-10
+            absolute
+            top-1/2
+            left-1/2
+            transform
+            -translate-x-1/2 -translate-y-1/2
+          "
+        >
+          <p class="text-white text-center text-xl mb-5">Food App</p>
+          <h1
+            class="
+              text-white text-center text-4xl
+              mb-5
+              font-bold
+              max-w-2xl
+              md:leading-relaxed md:text-5xl
+            "
+          >
+            Why stay hungry when you can order form Bella Onojie
+          </h1>
+          <p class="text-white text-center text-xl mb-5 font-light">
+            Download the bella onoje’s food app now on
+          </p>
+          <div class="flex justify-center relative">
+            <button
+              class="
+                mx-4
+                border border-transparent
+                bg-red-500
+                text-white
+                px-10
+                py-3
+                rounded-full
+                hover:bg-transparent hover:border-white
+                c-transition
+              "
+            >
+              Playstore
+            </button>
+            <button
+              class="
+                mx-4
+                border border-white
+                bg-transparent
+                text-white
+                px-10
+                py-3
+                rounded-full
+                hover:bg-red-500 hover:border-transparent
+                c-transition
+              "
+            >
+              Appstore
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- app image -->
+    <section id="appimg" class="relative">
+      <div
+        class="
+          absolute
+          top-1/2
+          left-1/2
+          transform
+          -translate-x-2/3 -translate-y-1/4
+        "
+      >
+        <img
+          src="./img/app-img.png"
+          alt="phone app screen"
+          class="max-w-none w-screen md:w-auto pl-20"
+        />
+      </div>
+    </section>
+    <!-- app steps -->
+    <section id="appsteps" class="pt-96 mt-28 md:mt-0 sm:pt-40-c">
+      <div class="container mx-auto px-4">
+        <hr class="w-4/5 md:w-2/5 mx-auto h-0.5 bg-gray-200" />
+        <h2 class="text-center py-10 text-4xl font-semi-bold">
+          How the app works
+        </h2>
+        <!-- step 1 -->
+        <div
+          class="flex flex-col md:flex-row justify-evenly items-center py-10"
+        >
+          <!-- img -->
+          <div class="text-center mb-10">
+            <img src="./img/app-1.png" alt="app screen" />
+          </div>
+          <!-- text -->
+          <div class="text-center md:text-left">
+            <span class="text-red-500 font-semibold">Create an account</span>
+            <h2
+              class="
+                py-5
+                text-4xl
+                font-bold
+                text-blue-900
+                max-w-md
+                leading-relaxed
+              "
+            >
+              Create/login to an existing account to get started
+            </h2>
+            <p
+              class="text-xl font-light text-gray-500 max-w-sm mx-auto md:mx-0"
+            >
+              An account is created with your email and a desired password
+            </p>
+          </div>
+        </div>
+        <!-- step 2 -->
+        <div
+          class="flex flex-col md:flex-row justify-evenly items-center py-10"
+        >
+          <!-- img -->
+          <div class="text-center mb-10 order-1 md:order-2">
+            <img src="./img/app-2.png" alt="app screen" />
+          </div>
+          <!-- text -->
+          <div class="text-center md:text-left order-2 md:order-1">
+            <span class="text-red-500 font-semibold">Create an account</span>
+            <h2
+              class="
+                py-5
+                text-4xl
+                font-bold
+                text-blue-900
+                max-w-md
+                leading-relaxed
+              "
+            >
+              Create/login to an existing account to get started
+            </h2>
+            <p
+              class="text-xl font-light text-gray-500 max-w-sm mx-auto md:mx-0"
+            >
+              An account is created with your email and a desired password
+            </p>
+          </div>
+        </div>
+        <!-- step 3 -->
+        <div
+          class="flex flex-col md:flex-row justify-evenly items-center py-10"
+        >
+          <!-- img -->
+          <div class="text-center mb-10">
+            <img src="./img/app-3.png" alt="app screen" />
+          </div>
+          <!-- text -->
+          <div class="text-center md:text-left">
+            <span class="text-red-500 font-semibold">Create an account</span>
+            <h2
+              class="
+                py-5
+                text-4xl
+                font-bold
+                text-blue-900
+                max-w-md
+                leading-relaxed
+              "
+            >
+              Create/login to an existing account to get started
+            </h2>
+            <p
+              class="text-xl font-light text-gray-500 max-w-sm mx-auto md:mx-0"
+            >
+              An account is created with your email and a desired password
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- download -->
+    <section id="banner">
+      <div
+        class="w-full h-custom bg-no-repeat bg-cover relative"
+        style="background-image: url('./img/download.png')"
+      >
+        <!-- heading -->
+        <div
+          class="
+            z-10
+            absolute
+            top-1/2
+            left-1/2
+            transform
+            -translate-x-1/2 -translate-y-1/2
+          "
+        >
+          <h1
+            class="
+              text-white text-center text-4xl
+              mb-5
+              font-bold
+              max-w-2xl
+              md:leading-relaxed md:text-5xl
+            "
+          >
+            Download the app now
+          </h1>
+          <p class="text-white text-center text-xl mb-5 font-light">
+            Available on your favorite store. Start your premium experience now
+          </p>
+          <div class="flex justify-center relative">
+            <button
+              class="
+                mx-4
+                border border-transparent
+                bg-red-500
+                text-white
+                px-10
+                py-3
+                rounded-full
+                hover:bg-transparent hover:border-white
+                c-transition
+              "
+            >
+              Playstore
+            </button>
+            <button
+              class="
+                mx-4
+                border border-white
+                bg-transparent
+                text-white
+                px-10
+                py-3
+                rounded-full
+                hover:bg-red-500 hover:border-transparent
+                c-transition
+              "
+            >
+              Appstore
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="container mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center py-5"
+        >
+          <!-- logo -->
+          <div class="">
+            <img src="./img/left.png" alt="" />
+          </div>
+          <!-- contact -->
+          <div class="flex items-center text-gray-500 mt-5">
+            <!-- phone -->
+            <a href="tel:901234567" class="mx-4 flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-red-500 mr-4"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                />
+              </svg>
+              <p>90-123-4567</p>
+            </a>
+            <!-- email -->
+            <a href="mailto:info@me.com" class="mx-4 flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-red-500 mr-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+              <p>info@me.com</p>
+            </a>
+          </div>
+        </div>
+        <!-- copy -->
+        <div class="text-center my-4">
+          <p class="text-gray-500">Copy &copy; 2021 Bella Olonje</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

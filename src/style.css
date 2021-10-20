@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.c-transition {
+  @apply transition
+  duration-500
+  ease-in-out;
+}
