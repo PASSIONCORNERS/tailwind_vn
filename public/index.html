@@ -4,74 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind css -->
     <link rel="stylesheet" href="./style.css" />
     <title>Tailwind CSS</title>
   </head>
   <body>
-    <!-- header -->
+    <!-- === Header === -->
     <header>
+      <!-- container -->
       <div class="container mx-auto px-4">
         <nav class="flex justify-between items-center py-5">
           <!-- logo -->
-          <div class="z-10 w-32 md:w-full">
-            <img src="./img/left.png" alt="" />
+          <div class="w-32 md:w-full z-20">
+            <img src="./img/logo.png" alt="website logo" />
           </div>
           <!-- links -->
-          <ul
-            id="menu"
-            class="
-              invisible
-              fixed
-              top-0
-              left-0
-              w-full
-              h-screen
-              flex flex-col
-              justify-center
-              items-center
-              bg-gray-900 bg-opacity-90
-              md:visible
-              md:bg-transparent
-              md:h-auto
-              md:justify-between
-              md:flex-row
-              md:static
-              md:flex
-              c-transition
-              z-20
-            "
-          >
+          <ul id="menu" class="c-menu invisible md:visible">
             <li class="m-12 md:m-0">
-              <a
-                href="#"
-                class="text-white md:text-black hover:text-red-500 c-transition"
-                >Home</a
-              >
+              <a href="#" class="c-link">Home</a>
             </li>
             <li class="m-12 md:m-0">
-              <a
-                href="#"
-                class="text-white md:text-black hover:text-red-500 c-transition"
-                >Product</a
-              >
+              <a href="#" class="c-link">Product</a>
             </li>
             <li class="m-12 md:m-0">
-              <a
-                href="#"
-                class="text-white md:text-black hover:text-red-500 c-transition"
-                >FAQ</a
-              >
+              <a href="#" class="c-link">FAQ</a>
             </li>
             <li class="m-12 md:m-0">
-              <a
-                href="#"
-                class="text-white md:text-black hover:text-red-500 c-transition"
-                >Contact</a
-              >
+              <a href="#" class="c-link">Contact</a>
             </li>
           </ul>
-          <!-- menu btn -->
-          <div class="md:hidden z-20 cursor-pointer" id="menu-button">
+          <!-- menu button -->
+          <div class="z-20 cursor-pointer md:hidden" id="menu-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-8 w-8"
@@ -83,57 +46,60 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h7"
+                d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
           </div>
         </nav>
       </div>
     </header>
-    <!-- banner -->
-    <section id="banner">
+    <!-- === Banner === -->
+    <section>
       <div
-        class="w-full h-custom bg-no-repeat bg-cover relative"
+        class="w-full bg-no-repeat bg-cover relative h-custom"
         style="background-image: url('./img/banner.png')"
       >
-        <!-- heading -->
         <div
           class="
-            z-10
             absolute
             top-1/2
             left-1/2
             transform
             -translate-x-1/2 -translate-y-1/2
+            z-10
+            text-white text-center
           "
         >
-          <p class="text-white text-center text-xl mb-5">Food App</p>
+          <!-- tag -->
+          <p class="text-xl mb-5">Food app</p>
+          <!-- title -->
           <h1
             class="
-              text-white text-center text-4xl
+              text-4xl
               mb-5
               font-bold
               max-w-2xl
               md:leading-relaxed md:text-5xl
             "
           >
-            Why stay hungry when you can order form Bella Onojie
+            Why stay hungry when you can order from Bella Olonje
           </h1>
-          <p class="text-white text-center text-xl mb-5 font-light">
-            Download the bella onoje’s food app now on
+          <!-- desc -->
+          <p class="text-xl mb-5 font-light">
+            Download the Bella Olonje's food app now on
           </p>
-          <div class="flex justify-center relative">
+          <!-- buttons -->
+          <div class="flex justify-center">
             <button
               class="
                 mx-4
                 border border-transparent
                 bg-red-500
-                text-white
                 px-10
                 py-3
                 rounded-full
                 hover:bg-transparent hover:border-white
-                c-transition
+                transition-all
               "
             >
               Playstore
@@ -143,12 +109,11 @@
                 mx-4
                 border border-white
                 bg-transparent
-                text-white
                 px-10
                 py-3
                 rounded-full
                 hover:bg-red-500 hover:border-transparent
-                c-transition
+                transition-all
               "
             >
               Appstore
@@ -157,8 +122,8 @@
         </div>
       </div>
     </section>
-    <!-- app image -->
-    <section id="appimg" class="relative">
+    <!-- === App Image  === -->
+    <section class="relative">
       <div
         class="
           absolute
@@ -171,20 +136,21 @@
         <img
           src="./img/app-img.png"
           alt="phone app screen"
-          class="max-w-none w-screen md:w-auto pl-20"
+          class="max-w-none w-screen pl-20 md:w-auto"
         />
       </div>
     </section>
-    <!-- app steps -->
-    <section id="appsteps" class="pt-96 mt-28 md:mt-0 sm:pt-40-c">
+    <!-- === App Steps === -->
+    <section class="pt-96 mt-28 sm:pt-40-c md:mt-0">
+      <!-- container -->
       <div class="container mx-auto px-4">
-        <hr class="w-4/5 md:w-2/5 mx-auto h-0.5 bg-gray-200" />
-        <h2 class="text-center py-10 text-4xl font-semi-bold">
+        <hr class="w-4/5 mx-auto h-0.5 bg-gray-200 md:w-2/5" />
+        <h2 class="text-center text-4xl font-semi-bold py-10">
           How the app works
         </h2>
         <!-- step 1 -->
         <div
-          class="flex flex-col md:flex-row justify-evenly items-center py-10"
+          class="flex flex-col justify-evenly items-center py-10 md:flex-row"
         >
           <!-- img -->
           <div class="text-center mb-10">
@@ -192,29 +158,31 @@
           </div>
           <!-- text -->
           <div class="text-center md:text-left">
+            <!-- tag -->
             <span class="text-red-500 font-semibold">Create an account</span>
+            <!-- title -->
             <h2
               class="
                 py-5
-                text-4xl
+                text-4xl text-blue-900
                 font-bold
-                text-blue-900
                 max-w-md
                 leading-relaxed
               "
             >
-              Create/login to an existing account to get started
+              Create/login to an exisiting account to get started
             </h2>
+            <!-- desc -->
             <p
-              class="text-xl font-light text-gray-500 max-w-sm mx-auto md:mx-0"
+              class="text-xl text-gray-500 font-light max-w-sm max-auto md:mx-0"
             >
-              An account is created with your email and a desired password
+              An account is created with your email and desired password
             </p>
           </div>
         </div>
         <!-- step 2 -->
         <div
-          class="flex flex-col md:flex-row justify-evenly items-center py-10"
+          class="flex flex-col justify-evenly items-center py-10 md:flex-row"
         >
           <!-- img -->
           <div class="text-center mb-10 order-1 md:order-2">
@@ -222,29 +190,31 @@
           </div>
           <!-- text -->
           <div class="text-center md:text-left order-2 md:order-1">
+            <!-- tag -->
             <span class="text-red-500 font-semibold">Create an account</span>
+            <!-- title -->
             <h2
               class="
                 py-5
-                text-4xl
+                text-4xl text-blue-900
                 font-bold
-                text-blue-900
                 max-w-md
                 leading-relaxed
               "
             >
-              Create/login to an existing account to get started
+              Create/login to an exisiting account to get started
             </h2>
+            <!-- desc -->
             <p
-              class="text-xl font-light text-gray-500 max-w-sm mx-auto md:mx-0"
+              class="text-xl text-gray-500 font-light max-w-sm max-auto md:mx-0"
             >
-              An account is created with your email and a desired password
+              An account is created with your email and desired password
             </p>
           </div>
         </div>
         <!-- step 3 -->
         <div
-          class="flex flex-col md:flex-row justify-evenly items-center py-10"
+          class="flex flex-col justify-evenly items-center py-10 md:flex-row"
         >
           <!-- img -->
           <div class="text-center mb-10">
@@ -252,48 +222,52 @@
           </div>
           <!-- text -->
           <div class="text-center md:text-left">
+            <!-- tag -->
             <span class="text-red-500 font-semibold">Create an account</span>
+            <!-- title -->
             <h2
               class="
                 py-5
-                text-4xl
+                text-4xl text-blue-900
                 font-bold
-                text-blue-900
                 max-w-md
                 leading-relaxed
               "
             >
-              Create/login to an existing account to get started
+              Create/login to an exisiting account to get started
             </h2>
+            <!-- desc -->
             <p
-              class="text-xl font-light text-gray-500 max-w-sm mx-auto md:mx-0"
+              class="text-xl text-gray-500 font-light max-w-sm max-auto md:mx-0"
             >
-              An account is created with your email and a desired password
+              An account is created with your email and desired password
             </p>
           </div>
         </div>
       </div>
     </section>
-    <!-- download -->
-    <section id="banner">
+    <!-- === Download === -->
+    <section>
+      <!-- background -->
       <div
-        class="w-full h-custom bg-no-repeat bg-cover relative"
+        class="relative w-full h-custom bg-no-repeat bg-cover"
         style="background-image: url('./img/download.png')"
       >
-        <!-- heading -->
         <div
           class="
-            z-10
             absolute
             top-1/2
             left-1/2
             transform
             -translate-x-1/2 -translate-y-1/2
+            text-white text-center
+            z-10
           "
         >
+          <!-- title -->
           <h1
             class="
-              text-white text-center text-4xl
+              text-4xl
               mb-5
               font-bold
               max-w-2xl
@@ -302,21 +276,22 @@
           >
             Download the app now
           </h1>
-          <p class="text-white text-center text-xl mb-5 font-light">
+          <!-- desc -->
+          <p class="text-xl mb-5 font-light">
             Available on your favorite store. Start your premium experience now
           </p>
-          <div class="flex justify-center relative">
+          <!-- buttons -->
+          <div class="flex justify-center">
             <button
               class="
                 mx-4
                 border border-transparent
                 bg-red-500
-                text-white
                 px-10
                 py-3
                 rounded-full
                 hover:bg-transparent hover:border-white
-                c-transition
+                transition-all
               "
             >
               Playstore
@@ -326,12 +301,11 @@
                 mx-4
                 border border-white
                 bg-transparent
-                text-white
                 px-10
                 py-3
                 rounded-full
                 hover:bg-red-500 hover:border-transparent
-                c-transition
+                transition-all
               "
             >
               Appstore
@@ -340,20 +314,22 @@
         </div>
       </div>
     </section>
-    <!-- footer -->
+    <!-- === Footer === -->
     <footer>
+      <!-- container -->
       <div class="container mx-auto px-4">
         <div
-          class="flex flex-col md:flex-row justify-between items-center py-5"
+          class="flex flex-col justify-between items-center py-5 md:flex-row"
         >
           <!-- logo -->
-          <div class="">
-            <img src="./img/left.png" alt="" />
+          <div>
+            <img src="./img/logo.png" alt="website logo" />
           </div>
           <!-- contact -->
-          <div class="flex items-center text-gray-500 mt-5">
+          <div class="flex items-center mt-5 text-gray-500">
             <!-- phone -->
-            <a href="tel:901234567" class="mx-4 flex">
+            <a href="tel:901234567" class="flex mx-4">
+              <!-- icon -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6 text-red-500 mr-4"
@@ -364,24 +340,26 @@
                   d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
                 />
               </svg>
+              <!-- number -->
               <p>90-123-4567</p>
             </a>
             <!-- email -->
-            <a href="mailto:info@me.com" class="mx-4 flex">
+            <a href="mailto:info@me.com" class="flex mx-4">
+              <!-- icon -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6 text-red-500 mr-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+                viewBox="0 0 20 20"
+                fill="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                />
+                <path
+                  d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
                 />
               </svg>
+              <!-- address -->
               <p>info@me.com</p>
             </a>
           </div>
@@ -392,6 +370,7 @@
         </div>
       </div>
     </footer>
+    <!-- main js -->
     <script src="./main.js"></script>
   </body>
 </html>

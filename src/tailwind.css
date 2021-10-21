@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.c-link {
+  @apply text-white
+  md:text-black
+  hover:text-red-500
+  transition
+  duration-500
+  ease-in;
+}
+
+.c-menu {
+  @apply fixed
+  z-20
+  top-0
+  left-0
+  w-full
+  h-screen
+  flex flex-col
+  justify-center
+  items-center
+  bg-gray-900 bg-opacity-90
+  md:bg-transparent
+  md:h-auto
+  md:flex-row
+  md:justify-between
+  md:static;
+}

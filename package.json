@@ -1,18 +1,18 @@
 {
-  "name": "tailwind_vn",
+  "name": "practice",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tailwind": "postcss src/style.css -o public/style.css -w"
+    "tailwind": "tailwindcss build -i src/tailwind.css -o public/style.css -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.3.7",
-    "postcss": "^8.3.9",
-    "postcss-cli": "^9.0.1",
+    "postcss": "^8.3.10",
     "tailwindcss": "^2.2.17"
-  }
+  },
+  "dependencies": {}
 }
