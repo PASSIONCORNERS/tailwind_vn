@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- tailwind css -->
+    <!-- main css -->
     <link rel="stylesheet" href="./style.css" />
-    <title>Tailwind CSS</title>
+    <title>Tailwind</title>
   </head>
   <body>
     <!-- === Header === -->
@@ -16,10 +16,10 @@
         <nav class="flex justify-between items-center py-5">
           <!-- logo -->
           <div class="w-32 md:w-full z-20">
-            <img src="./img/logo.png" alt="website logo" />
+            <img src="./img/logo.png " alt="website logo" />
           </div>
           <!-- links -->
-          <ul id="menu" class="c-menu invisible md:visible">
+          <ul id="menu" class="invisible md:visible c-menu">
             <li class="m-12 md:m-0">
               <a href="#" class="c-link">Home</a>
             </li>
@@ -34,7 +34,7 @@
             </li>
           </ul>
           <!-- menu button -->
-          <div class="z-20 cursor-pointer md:hidden" id="menu-button">
+          <div id="menu-button" class="z-20 md:hidden cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-8 w-8"
@@ -82,11 +82,11 @@
               md:leading-relaxed md:text-5xl
             "
           >
-            Why stay hungry when you can order from Bella Olonje
+            Why stay hungry when you can order form Bella Onojie
           </h1>
           <!-- desc -->
           <p class="text-xl mb-5 font-light">
-            Download the Bella Olonje's food app now on
+            Download the bella onoje’s food app now on
           </p>
           <!-- buttons -->
           <div class="flex justify-center">
@@ -122,7 +122,7 @@
         </div>
       </div>
     </section>
-    <!-- === App Image  === -->
+    <!-- === App Image === -->
     <section class="relative">
       <div
         class="
@@ -135,7 +135,7 @@
       >
         <img
           src="./img/app-img.png"
-          alt="phone app screen"
+          alt="phone app screens"
           class="max-w-none w-screen pl-20 md:w-auto"
         />
       </div>
@@ -145,7 +145,8 @@
       <!-- container -->
       <div class="container mx-auto px-4">
         <hr class="w-4/5 mx-auto h-0.5 bg-gray-200 md:w-2/5" />
-        <h2 class="text-center text-4xl font-semi-bold py-10">
+        <!-- tiltle -->
+        <h2 class="text-center text-4xl font-semibold py-10">
           How the app works
         </h2>
         <!-- step 1 -->
@@ -163,20 +164,20 @@
             <!-- title -->
             <h2
               class="
-                py-5
                 text-4xl text-blue-900
                 font-bold
                 max-w-md
                 leading-relaxed
+                py-5
               "
             >
-              Create/login to an exisiting account to get started
+              Create/login to an existing account to get started
             </h2>
             <!-- desc -->
             <p
-              class="text-xl text-gray-500 font-light max-w-sm max-auto md:mx-0"
+              class="text-xl text-gray-500 font-light max-w-sm mx-auto md:mx-0"
             >
-              An account is created with your email and desired password
+              An account is created with your email and a desired password
             </p>
           </div>
         </div>
@@ -195,20 +196,20 @@
             <!-- title -->
             <h2
               class="
-                py-5
                 text-4xl text-blue-900
                 font-bold
                 max-w-md
                 leading-relaxed
+                py-5
               "
             >
-              Create/login to an exisiting account to get started
+              Create/login to an existing account to get started
             </h2>
             <!-- desc -->
             <p
-              class="text-xl text-gray-500 font-light max-w-sm max-auto md:mx-0"
+              class="text-xl text-gray-500 font-light max-w-sm mx-auto md:mx-0"
             >
-              An account is created with your email and desired password
+              An account is created with your email and a desired password
             </p>
           </div>
         </div>
@@ -227,20 +228,20 @@
             <!-- title -->
             <h2
               class="
-                py-5
                 text-4xl text-blue-900
                 font-bold
                 max-w-md
                 leading-relaxed
+                py-5
               "
             >
-              Create/login to an exisiting account to get started
+              Create/login to an existing account to get started
             </h2>
             <!-- desc -->
             <p
-              class="text-xl text-gray-500 font-light max-w-sm max-auto md:mx-0"
+              class="text-xl text-gray-500 font-light max-w-sm mx-auto md:mx-0"
             >
-              An account is created with your email and desired password
+              An account is created with your email and a desired password
             </p>
           </div>
         </div>
@@ -260,7 +261,7 @@
             left-1/2
             transform
             -translate-x-1/2 -translate-y-1/2
-            text-white text-center
+            text-center text-white
             z-10
           "
         >
@@ -315,18 +316,28 @@
       </div>
     </section>
     <!-- === Footer === -->
-    <footer>
+    <section>
       <!-- container -->
       <div class="container mx-auto px-4">
         <div
           class="flex flex-col justify-between items-center py-5 md:flex-row"
         >
           <!-- logo -->
-          <div>
+          <div class="w-32 md:w-full">
             <img src="./img/logo.png" alt="website logo" />
           </div>
           <!-- contact -->
-          <div class="flex items-center mt-5 text-gray-500">
+          <div
+            class="
+              flex
+              items-center
+              mt-5
+              text-gray-500
+              w-full
+              justify-center
+              md:justify-end
+            "
+          >
             <!-- phone -->
             <a href="tel:901234567" class="flex mx-4">
               <!-- icon -->
@@ -366,10 +377,10 @@
         </div>
         <!-- copy -->
         <div class="text-center my-4">
-          <p class="text-gray-500">Copy &copy; 2021 Bella Olonje</p>
+          <p class="text-gray-500">Copy &copy; 2021 Bella Onojie</p>
         </div>
       </div>
-    </footer>
+    </section>
     <!-- main js -->
     <script src="./main.js"></script>
   </body>
